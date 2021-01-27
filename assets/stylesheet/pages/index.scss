@@ -1,0 +1,36 @@
+@import "../resources/base";
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .title {
+    height: 100vh;
+    display: flex;
+
+    h1 {
+      align-self: center;
+      margin: 0 auto;
+      line-height: 112px;
+    }
+  }
+
+  .rules {
+    border-left: 5px solid $yellow;
+    display: flex;
+    flex-direction: column;
+
+    .cell {
+      height: 12.1vh;
+      width: 75vw;
+
+      border-bottom: 5px solid $yellow;
+
+      .text {
+        display: flex;
+        align-items: baseline;
+        align-self: center;
+      }
+    }
+  }
+}

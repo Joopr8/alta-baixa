@@ -1,0 +1,20 @@
+@import "../resources/reset";
+@import "../resources/variables";
+
+html {
+  font-family: $fira;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: $semi-bold;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: $bold;
+}
+
+.yellow {
+  color: $yellow;
+}
