@@ -6,12 +6,15 @@
 
   .title {
     height: 100vh;
+    width: 35rem;
     display: flex;
+    overflow-y: hidden;
 
     h1 {
       align-self: center;
       margin: 0 auto;
       line-height: 112px;
+      padding: 5rem;
     }
   }
 
@@ -21,15 +24,19 @@
     flex-direction: column;
 
     .cell {
-      height: 12.1vh;
-      width: 75vw;
+      height: 12vh;
+      width: 70vw;
 
       border-bottom: 5px solid $yellow;
 
       .text {
         display: flex;
         align-items: baseline;
-        align-self: center;
+        padding: 1.5rem;
+
+        h2 {
+          margin-left: 1rem;
+        }
       }
     }
   }

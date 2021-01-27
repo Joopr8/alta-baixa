@@ -166,9 +166,11 @@ h2 {
 
 .container .title {
   height: 100vh;
+  width: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow-y: hidden;
 }
 
 .container .title h1 {
@@ -177,6 +179,7 @@ h2 {
       align-self: center;
   margin: 0 auto;
   line-height: 112px;
+  padding: 5rem;
 }
 
 .container .rules {
@@ -191,8 +194,8 @@ h2 {
 }
 
 .container .rules .cell {
-  height: 12.1vh;
-  width: 75vw;
+  height: 12vh;
+  width: 70vw;
   border-bottom: 5px solid #ffc83b;
 }
 
@@ -203,7 +206,10 @@ h2 {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -ms-flex-item-align: center;
-      align-self: center;
+  padding: 1.5rem;
+}
+
+.container .rules .cell .text h2 {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
