@@ -6,19 +6,48 @@ html {
     flex-direction: row;
     overflow: scroll;
 
+    @include hd {
+      flex-direction: column;
+    }
+
     .title {
       height: 100vh;
+
       display: flex;
+      justify-content: center;
+      align-items: center;
+
       flex: 3;
+
+      @include hd {
+        height: 50vh;
+        flex: none;
+      }
+
+      @include hd {
+        justify-content: start;
+        margin-left: 2rem;
+      }
+
+      @include phablet {
+        height: 100vh;
+      }
 
       h1 {
         position: fixed;
-
-        align-self: center;
         width: 20rem;
 
         line-height: 112px;
-        padding: 6rem;
+
+        @include hd {
+          position: initial;
+          width: 80vw;
+        }
+
+        @include desktop {
+          font-size: 65px;
+          line-height: 97px;
+        }
       }
     }
 
@@ -28,15 +57,20 @@ html {
 
       display: flex;
       flex-direction: column;
-      flex: 6;
+      flex: 7;
 
       overflow-y: scroll;
 
+      @include hd {
+        border-left: none;
+        border-top: 5px solid $yellow;
+      }
+
       .cell {
-        height: 12vh;
         width: 100%;
 
         border-bottom: 5px solid $yellow;
+        padding: 1.2rem 0;
 
         display: flex;
         flex-direction: column;
@@ -45,20 +79,54 @@ html {
           cursor: pointer;
         }
 
+        @include tablet {
+          padding: 0.8rem 0;
+        }
+
         .text {
           display: flex;
-          align-items: baseline;
-          padding: 1.5rem;
 
-          h2 {
-            margin-left: 0.5rem;
+          h1 {
+            margin-left: 2rem;
+            text-align: right;
+
+            @include desktop {
+              margin-left: 1.5rem;
+              font-size: 65px;
+            }
+
+            @include tablet {
+              margin-left: 1rem;
+              font-size: 55px;
+            }
+
+            @include phablet {
+              margin-left: 0.7rem;
+              font-size: 45px;
+            }
+
+            .exp {
+              font-size: 50px;
+
+              @include desktop {
+                font-size: 35px;
+              }
+
+              @include tablet {
+                font-size: 25px;
+              }
+
+              @include phablet {
+                font-size: 18px;
+              }
+            }
           }
         }
 
         .description {
           display: none;
           font-weight: $light;
-          margin: 1rem 2rem;
+          margin: 1rem 4.5rem;
         }
       }
     }

@@ -24,3 +24,29 @@ p {
 .yellow {
   color: $yellow;
 }
+
+@mixin phablet {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin hd {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+@mixin resolution($r) {
+  @media (max-width: #{$r}) {
+    @content;
+  }
+}

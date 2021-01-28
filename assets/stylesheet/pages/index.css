@@ -171,24 +171,73 @@ html .container {
   overflow: scroll;
 }
 
+@media (max-width: 1400px) {
+  html .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 html .container .title {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
 }
 
+@media (max-width: 1400px) {
+  html .container .title {
+    height: 50vh;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  html .container .title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html .container .title {
+    height: 100vh;
+  }
+}
+
 html .container .title h1 {
   position: fixed;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 20rem;
   line-height: 112px;
-  padding: 6rem;
+}
+
+@media (max-width: 1400px) {
+  html .container .title h1 {
+    position: initial;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  html .container .title h1 {
+    font-size: 65px;
+    line-height: 97px;
+  }
 }
 
 html .container .rules {
@@ -201,16 +250,23 @@ html .container .rules {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-flex: 6;
-      -ms-flex: 6;
-          flex: 6;
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
   overflow-y: scroll;
 }
 
+@media (max-width: 1400px) {
+  html .container .rules {
+    border-left: none;
+    border-top: 5px solid #ffc83b;
+  }
+}
+
 html .container .rules .cell {
-  height: 12vh;
   width: 100%;
   border-bottom: 5px solid #ffc83b;
+  padding: 1.2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,24 +280,70 @@ html .container .rules .cell:hover {
   cursor: pointer;
 }
 
+@media (max-width: 750px) {
+  html .container .rules .cell {
+    padding: 0.8rem 0;
+  }
+}
+
 html .container .rules .cell .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding: 1.5rem;
 }
 
-html .container .rules .cell .text h2 {
-  margin-left: 0.5rem;
+html .container .rules .cell .text h1 {
+  margin-left: 2rem;
+  text-align: right;
+}
+
+@media (max-width: 1000px) {
+  html .container .rules .cell .text h1 {
+    margin-left: 1.5rem;
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 750px) {
+  html .container .rules .cell .text h1 {
+    margin-left: 1rem;
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 550px) {
+  html .container .rules .cell .text h1 {
+    margin-left: 0.7rem;
+    font-size: 45px;
+  }
+}
+
+html .container .rules .cell .text h1 .exp {
+  font-size: 50px;
+}
+
+@media (max-width: 1000px) {
+  html .container .rules .cell .text h1 .exp {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  html .container .rules .cell .text h1 .exp {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  html .container .rules .cell .text h1 .exp {
+    font-size: 18px;
+  }
 }
 
 html .container .rules .cell .description {
   display: none;
   font-weight: 200;
-  margin: 1rem 2rem;
+  margin: 1rem 4.5rem;
 }
 
 html ::-webkit-scrollbar {
