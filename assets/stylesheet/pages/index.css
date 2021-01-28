@@ -168,6 +168,7 @@ html .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  overflow: scroll;
 }
 
 html .container .title {
@@ -241,5 +242,12 @@ html .container .rules .cell .description {
   display: none;
   font-weight: 200;
   margin: 1rem 2rem;
+}
+
+html ::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
 /*# sourceMappingURL=index.css.map */
