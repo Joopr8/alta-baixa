@@ -15,6 +15,12 @@ h2 {
   font-weight: $bold;
 }
 
+p {
+  font-weight: $light;
+  line-height: 25px;
+  font-size: 20px;
+}
+
 .yellow {
   color: $yellow;
 }

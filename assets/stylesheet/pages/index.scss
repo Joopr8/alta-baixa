@@ -1,41 +1,63 @@
 @import "../resources/base";
 
-.container {
-  display: flex;
-  flex-direction: row;
-
-  .title {
-    height: 100vh;
-    width: 35rem;
+html {
+  .container {
     display: flex;
-    overflow-y: hidden;
+    flex-direction: row;
 
-    h1 {
-      align-self: center;
-      margin: 0 auto;
-      line-height: 112px;
-      padding: 5rem;
+    .title {
+      height: 100vh;
+      display: flex;
+      flex: 3;
+
+      h1 {
+        position: fixed;
+
+        align-self: center;
+        width: 20rem;
+
+        line-height: 112px;
+        padding: 6rem;
+      }
     }
-  }
 
-  .rules {
-    border-left: 5px solid $yellow;
-    display: flex;
-    flex-direction: column;
+    .rules {
+      height: 100%;
+      border-left: 5px solid $yellow;
 
-    .cell {
-      height: 12vh;
-      width: 70vw;
+      display: flex;
+      flex-direction: column;
+      flex: 6;
 
-      border-bottom: 5px solid $yellow;
+      overflow-y: scroll;
 
-      .text {
+      .cell {
+        height: 12vh;
+        width: 100%;
+
+        border-bottom: 5px solid $yellow;
+
         display: flex;
-        align-items: baseline;
-        padding: 1.5rem;
+        flex-direction: column;
 
-        h2 {
-          margin-left: 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+
+        .text {
+          display: flex;
+          align-items: baseline;
+          padding: 1.5rem;
+
+          h2 {
+            margin-left: 0.5rem;
+          }
+        }
+
+        .description {
+          display: none;
+          font-weight: $light;
+          margin: 1rem 2rem;
         }
       }
     }
