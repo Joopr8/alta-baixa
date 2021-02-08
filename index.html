@@ -252,8 +252,9 @@
 
   $(".cell").click(function () {
     desc = $("#" + $(this).attr("id")).children()[1];
+    $(desc).fadeToggle();
 
-    if (temp % 2 == 0) {
+    /*if (temp % 2 == 0) {
       $(this).animate({ height: "30vh" });
       $(desc).css("display", "block");
 
@@ -264,5 +265,6 @@
     }
 
     temp++;
+    */
   });
 </script>

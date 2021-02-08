@@ -205,15 +205,6 @@ html .container .title {
   }
 }
 
-@media (max-width: 1400px) {
-  html .container .title {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    margin-left: 2rem;
-  }
-}
-
 @media (max-width: 550px) {
   html .container .title {
     height: 100vh;
@@ -235,7 +226,7 @@ html .container .title h1 {
 
 @media (max-width: 1000px) {
   html .container .title h1 {
-    font-size: 65px;
+    font-size: 4rem;
     line-height: 97px;
   }
 }
@@ -253,7 +244,6 @@ html .container .rules {
   -webkit-box-flex: 7;
       -ms-flex: 7;
           flex: 7;
-  overflow-y: scroll;
 }
 
 @media (max-width: 1400px) {
@@ -264,9 +254,6 @@ html .container .rules {
 }
 
 html .container .rules .cell {
-  width: 100%;
-  border-bottom: 5px solid #ffc83b;
-  padding: 1.2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,6 +261,9 @@ html .container .rules .cell {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  border-bottom: 5px solid #ffc83b;
+  padding: 1.2rem 2rem;
 }
 
 html .container .rules .cell:hover {
@@ -293,27 +283,23 @@ html .container .rules .cell .text {
 }
 
 html .container .rules .cell .text h1 {
-  margin-left: 2rem;
   text-align: right;
 }
 
 @media (max-width: 1000px) {
   html .container .rules .cell .text h1 {
-    margin-left: 1.5rem;
-    font-size: 65px;
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 750px) {
   html .container .rules .cell .text h1 {
-    margin-left: 1rem;
     font-size: 55px;
   }
 }
 
 @media (max-width: 550px) {
   html .container .rules .cell .text h1 {
-    margin-left: 0.7rem;
     font-size: 45px;
   }
 }
