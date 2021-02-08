@@ -262,7 +262,7 @@ html .container .title {
 html .container .title h1 {
   z-index: 4;
   width: 20rem;
-  line-height: 112px;
+  line-height: 96px;
 }
 
 @media (max-width: 1400px) {
@@ -281,7 +281,6 @@ html .container .title h1 {
 
 html .container .rules {
   height: 100%;
-  border-left: 5px solid #ffc83b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +297,7 @@ html .container .rules {
 @media (max-width: 1400px) {
   html .container .rules {
     border-left: none;
-    border-top: 5px solid #ffc83b;
+    border-top: 5px solid #000000;
   }
 }
 
@@ -311,7 +310,7 @@ html .container .rules .cell {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  border-bottom: 5px solid #ffc83b;
+  border-bottom: 5px solid #000000;
   padding: 1.2rem 2rem;
 }
 

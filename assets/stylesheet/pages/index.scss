@@ -62,7 +62,7 @@ html {
         z-index: 4;
         width: 20rem;
 
-        line-height: 112px;
+        line-height: 96px;
 
         @include hd {
           position: initial;
@@ -78,7 +78,6 @@ html {
 
     .rules {
       height: 100%;
-      border-left: 5px solid $yellow;
 
       display: flex;
       flex-direction: column;
@@ -88,7 +87,7 @@ html {
 
       @include hd {
         border-left: none;
-        border-top: 5px solid $yellow;
+        border-top: 5px solid $black;
       }
 
       .cell {
@@ -96,7 +95,7 @@ html {
         flex-direction: column;
 
         width: 100%;
-        border-bottom: 5px solid $yellow;
+        border-bottom: 5px solid $black;
         padding: 1.2rem 2rem;
 
         &:hover {
