@@ -1,0 +1,128 @@
+@import "../resources/base";
+
+html {
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    @include hd {
+      flex-direction: column;
+    }
+
+    .title {
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      flex: 3;
+      overflow-y: hidden;
+
+      @include hd {
+        height: 50vh;
+        flex: none;
+      }
+
+      @include phablet {
+        height: 100vh;
+      }
+
+      h1 {
+        position: fixed;
+        z-index: 4;
+        width: 20rem;
+
+        line-height: 96px;
+
+        @include hd {
+          position: initial;
+          width: 80vw;
+        }
+
+        @include desktop {
+          font-size: 4rem;
+          line-height: 97px;
+        }
+      }
+    }
+
+    .rules {
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      flex: 7;
+
+      overflow: scroll;
+
+      @include hd {
+        border-left: none;
+        border-top: 5px solid $black;
+      }
+
+      .cell {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        border-bottom: 5px solid $black;
+        padding: 1.2rem 2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @include tablet {
+          padding: 0.8rem 0;
+        }
+
+        .text {
+          display: flex;
+
+          h1 {
+            text-align: right;
+
+            @include desktop {
+              font-size: 4rem;
+            }
+
+            @include tablet {
+              font-size: 55px;
+            }
+
+            @include phablet {
+              font-size: 45px;
+            }
+
+            .exp {
+              font-size: 50px;
+
+              @include desktop {
+                font-size: 35px;
+              }
+
+              @include tablet {
+                font-size: 25px;
+              }
+
+              @include phablet {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+
+        .description {
+          display: none;
+          font-weight: $light;
+          margin: 1rem 5rem;
+        }
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+}
