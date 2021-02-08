@@ -1,6 +1,36 @@
 @import "../resources/base";
 
 html {
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: $yellow;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .dots {
+      margin-top: -20rem;
+      font-size: 25rem;
+    }
+
+    .name {
+      text-align: center;
+      margin-bottom: 5rem;
+
+      h1 {
+        font-weight: $extra-bold;
+        font-size: 15rem;
+      }
+    }
+
+    .magazine {
+      font-weight: $light;
+      font-size: 2rem;
+    }
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -29,7 +59,7 @@ html {
       }
 
       h1 {
-        position: fixed;
+        //position: fixed;
         width: 20rem;
 
         line-height: 112px;

@@ -25,6 +25,16 @@ p {
   color: $yellow;
 }
 
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+/* Mixins */
+
 @mixin phablet {
   @media (max-width: 550px) {
     @content;

@@ -12,6 +12,19 @@
     <title>Alta Baixa</title>
   </head>
   <body>
+    <div class="hero">
+      <div class="dots">
+        <span class="black">.</span>
+        <span class="black">.</span>
+        <span class="black">.</span>
+        <span class="black">.</span>
+      </div>
+      <div class="name">
+        <h1 class="white">alta</h1>
+        <h1 class="black">BAIXA</h1>
+      </div>
+      <p class="magazine">- Revista de cultura tipográfica -</p>
+    </div>
     <div class="container">
       <div class="title">
         <h1>
@@ -252,7 +265,7 @@
 
   $(".cell").click(function () {
     desc = $("#" + $(this).attr("id")).children()[1];
-    $(desc).fadeToggle();
+    $(desc).toggle();
 
     /*if (temp % 2 == 0) {
       $(this).animate({ height: "30vh" });
