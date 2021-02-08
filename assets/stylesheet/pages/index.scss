@@ -34,7 +34,6 @@ html {
   .container {
     display: flex;
     flex-direction: row;
-    overflow: scroll;
 
     @include hd {
       flex-direction: column;
@@ -48,6 +47,7 @@ html {
       align-items: center;
 
       flex: 3;
+      overflow-y: hidden;
 
       @include hd {
         height: 50vh;
@@ -59,7 +59,7 @@ html {
       }
 
       h1 {
-        //position: fixed;
+        z-index: 4;
         width: 20rem;
 
         line-height: 112px;
@@ -83,6 +83,8 @@ html {
       display: flex;
       flex-direction: column;
       flex: 7;
+
+      overflow: scroll;
 
       @include hd {
         border-left: none;
@@ -144,7 +146,7 @@ html {
         .description {
           display: none;
           font-weight: $light;
-          margin: 1rem 4.5rem;
+          margin: 1rem 5rem;
         }
       }
     }

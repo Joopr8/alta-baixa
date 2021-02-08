@@ -216,7 +216,6 @@ html .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow: scroll;
 }
 
 @media (max-width: 1400px) {
@@ -242,6 +241,7 @@ html .container .title {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
+  overflow-y: hidden;
 }
 
 @media (max-width: 1400px) {
@@ -260,6 +260,7 @@ html .container .title {
 }
 
 html .container .title h1 {
+  z-index: 4;
   width: 20rem;
   line-height: 112px;
 }
@@ -291,6 +292,7 @@ html .container .rules {
   -webkit-box-flex: 7;
       -ms-flex: 7;
           flex: 7;
+  overflow: scroll;
 }
 
 @media (max-width: 1400px) {
@@ -376,7 +378,7 @@ html .container .rules .cell .text h1 .exp {
 html .container .rules .cell .description {
   display: none;
   font-weight: 200;
-  margin: 1rem 4.5rem;
+  margin: 1rem 5rem;
 }
 
 html ::-webkit-scrollbar {
