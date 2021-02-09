@@ -11,9 +11,47 @@ html {
     flex-direction: column;
     align-items: center;
 
-    .dots {
+    .links {
       margin-top: -20rem;
       font-size: 25rem;
+
+      display: flex;
+      justify-content: space-between;
+      width: 80vw;
+
+      .dot {
+        .point {
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 1s ease-out;
+          background-color: $black;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          .point {
+            transition: background-color 0.5s ease-out;
+            background-color: $yellow;
+          }
+
+          .overlay {
+            display: block;
+            position: absolute;
+
+            color: $white;
+            text-decoration: underline;
+
+            margin: -10rem -2rem;
+          }
+        }
+      }
+
+      .overlay {
+        display: none;
+      }
     }
 
     .name {
