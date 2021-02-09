@@ -294,6 +294,7 @@ html .container .rules .cell .text {
 
 html .container .rules .cell .text h1 {
   text-align: right;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1000px) {
@@ -338,7 +339,7 @@ html .container .rules .cell .text h1 .exp {
 
 html .container .rules .cell .description {
   display: none;
-  font-weight: 200;
+  font-weight: 400;
   margin: 1rem 5rem;
 }
 

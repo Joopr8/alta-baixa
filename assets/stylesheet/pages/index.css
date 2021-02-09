@@ -224,12 +224,29 @@ html .hero .links .dot:hover .overlay {
   display: block;
   position: absolute;
   color: #ffffff;
-  text-decoration: underline;
-  margin: -10rem -2rem;
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: -10rem -4rem;
+}
+
+html .hero .links .text {
+  display: none;
+  position: absolute;
+  width: 40vw;
+  background-color: white;
+  padding: 2rem;
+  margin: -2rem -4rem;
+  font-weight: 200;
+  z-index: 3;
 }
 
 html .hero .links .overlay {
   display: none;
+}
+
+html .hero .links .overlay:active {
+  background-color: black;
 }
 
 html .hero .name {

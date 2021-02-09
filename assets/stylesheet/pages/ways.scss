@@ -82,6 +82,7 @@ html {
 
           h1 {
             text-align: right;
+            text-transform: uppercase;
 
             @include desktop {
               font-size: 4rem;
@@ -115,7 +116,7 @@ html {
 
         .description {
           display: none;
-          font-weight: $light;
+          font-weight: $regular;
           margin: 1rem 5rem;
         }
       }
