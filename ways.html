@@ -244,24 +244,10 @@
   </body>
 </html>
 <script>
-  //var temp = 0;
   var desc;
 
   $(".cell").click(function () {
     desc = $("#" + $(this).attr("id")).children()[1];
-    $(desc).toggle();
-
-    /*if (temp % 2 == 0) {
-      $(this).animate({ height: "30vh" });
-      $(desc).css("display", "block");
-
-      //$(this).siblings().css("height", "12vh");
-    } else {
-      $(this).animate({ height: "12vh" });
-      $(desc).css("display", "none");
-    }
-
-    temp++;
-    */
+    $(desc).slideToggle();
   });
 </script>
