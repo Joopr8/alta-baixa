@@ -168,6 +168,16 @@ p {
   color: #ffffff;
 }
 
+.c-my-flooper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
 /* Mixins */
 html .hero {
   width: 100vw;

@@ -57,7 +57,6 @@ html {
       overflow: scroll;
 
       @include hd {
-        border-left: none;
         border-top: 5px solid $black;
       }
 
@@ -80,7 +79,8 @@ html {
         .text {
           display: flex;
 
-          h1 {
+          .number {
+            color: $yellow;
             text-align: right;
 
             @include desktop {

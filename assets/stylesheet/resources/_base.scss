@@ -33,6 +33,17 @@ p {
   color: $white;
 }
 
+//[1] required
+.c-my-flooper {
+  position: relative; // [1] anything but static
+  display: flex; // [1]
+  flex-wrap: nowrap; // [1]
+  white-space: nowrap; // [1]
+}
+
+.c-my-flooper__el {
+}
+
 /* Mixins */
 
 @mixin phablet {
