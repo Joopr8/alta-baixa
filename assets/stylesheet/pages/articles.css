@@ -183,4 +183,29 @@ p {
 }
 
 /* Mixins */
+body {
+  padding: 4rem;
+  overflow: hidden;
+}
+
+body .background {
+  position: absolute;
+  z-index: -1;
+}
+
+body .p-articles {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 400;
+}
+
+body .bold {
+  font-style: italic;
+  font-weight: 700;
+}
+
+body .thin {
+  font-style: italic;
+  font-weight: 200;
+}
 /*# sourceMappingURL=articles.css.map */

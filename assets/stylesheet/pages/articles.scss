@@ -1,1 +1,27 @@
 @import "../resources/base";
+
+body {
+  padding: 4rem;
+  overflow: hidden;
+
+  .background {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .p-articles {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: $regular;
+  }
+
+  .bold {
+    font-style: italic;
+    font-weight: $bold;
+  }
+
+  .thin {
+    font-style: italic;
+    font-weight: $light;
+  }
+}

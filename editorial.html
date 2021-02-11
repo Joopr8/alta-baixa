@@ -4,9 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/stylesheet/pages/articles.css" />
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <h1>Editorial</h1>
+    <h1 class="yellow background" id="1">Editorial</h1>
+    <p class="p-articles">
+      <span class="bold"> Alta Baixa</span> é uma revista de cultura tipográfica
+      desenvolvida no ambito académico e que se propõe a refletir sobre todos os
+      aspectos da <span class="thin">tipografia </span>, incluindo a sua
+      história, e cujos conteúdos são deliberadamente ecléticos. Trata-se de uma
+      revista que pretende publicar material histórico e contemporâneo, a partir
+      de fontes académicas e jornalísticas. Isto significa que a revista deve
+      oferecer uma mistura de artigos e materiais de referência e transmitir a
+      convicção de
+      <span class="bold"
+        >que o opções de design devem estar em consonância com o conteúdo.</span
+      >
+    </p>
   </body>
 </html>
+<script>
+  let screenLog = document.querySelector(".background");
+  document.addEventListener("mousemove", logKey);
+
+  function logKey(e) {
+    placeDiv(e.screenX, e.screenY);
+    placeDiv(e.clientX, e.clientY);
+  }
+
+  function placeDiv(x_pos, y_pos) {
+    var d = document.getElementById("1");
+
+    var w = $(d).width();
+    var h = $(d).height();
+
+    d.style.position = "absolute";
+    d.style.left = x_pos + "px";
+    d.style.top = y_pos - h + "px";
+  }
+</script>
