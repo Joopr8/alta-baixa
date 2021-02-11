@@ -28,7 +28,7 @@ html {
         height: 100vh;
       }
 
-      h1 {
+      h2 {
         position: fixed;
         z-index: 4;
         width: 20rem;
@@ -78,9 +78,9 @@ html {
 
         .text {
           display: flex;
+          font-weight: $bold;
 
           .number {
-            color: $yellow;
             text-align: right;
 
             @include desktop {

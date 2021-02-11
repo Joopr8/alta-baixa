@@ -146,8 +146,12 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: 700;
+}
+
+h3 {
+  font-size: 4.5rem;
 }
 
 p {
@@ -230,7 +234,7 @@ html .container .title {
   }
 }
 
-html .container .title h1 {
+html .container .title h2 {
   position: fixed;
   z-index: 4;
   width: 20rem;
@@ -238,14 +242,14 @@ html .container .title h1 {
 }
 
 @media (max-width: 1400px) {
-  html .container .title h1 {
+  html .container .title h2 {
     position: initial;
     width: 80vw;
   }
 }
 
 @media (max-width: 1000px) {
-  html .container .title h1 {
+  html .container .title h2 {
     font-size: 4rem;
     line-height: 97px;
   }
@@ -299,10 +303,10 @@ html .container .rules .cell .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 700;
 }
 
 html .container .rules .cell .text .number {
-  color: #ffc83b;
   text-align: right;
 }
 
