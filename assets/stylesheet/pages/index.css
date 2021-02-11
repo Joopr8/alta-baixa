@@ -141,7 +141,7 @@ html {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 15rem;
   font-weight: 600;
 }
 
@@ -266,7 +266,6 @@ html .hero .name {
 
 html .hero .name h1 {
   font-weight: 800;
-  font-size: 15rem;
 }
 
 html .hero .magazine {

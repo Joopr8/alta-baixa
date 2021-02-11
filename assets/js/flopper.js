@@ -18,3 +18,5 @@ let myFlooper1 = new flooper('.js-flooper', {
     onSlowmotion: () => {}, //noop
   });
   myFlooper.init();
+
+  
