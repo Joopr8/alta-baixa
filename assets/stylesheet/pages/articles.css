@@ -184,18 +184,60 @@ p {
 
 /* Mixins */
 body {
-  padding: 4rem;
+  overflow-x: hidden;
 }
 
 body .background {
   position: absolute;
   z-index: -1;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  body .background {
+    font-size: 13rem;
+  }
+}
+
+@media (max-width: 750px) {
+  body .background {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  body .background {
+    font-size: 7rem;
+  }
 }
 
 body .p-big {
+  padding: 4rem;
   font-size: 4rem;
   line-height: 5rem;
   font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  body .p-big {
+    padding: 3rem;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  body .p-big {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  body .p-big {
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 body .p-small {
@@ -212,5 +254,32 @@ body .bold {
 body .thin {
   font-style: italic;
   font-weight: 200;
+}
+
+body .dot {
+  height: 4rem;
+  width: 4rem;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 4rem;
+}
+
+@media (max-width: 1000px) {
+  body .dot {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  body .dot {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  body .dot {
+    margin-left: 1rem;
+  }
 }
 /*# sourceMappingURL=articles.css.map */

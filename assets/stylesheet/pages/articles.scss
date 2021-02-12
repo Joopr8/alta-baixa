@@ -1,17 +1,47 @@
 @import "../resources/base";
 
 body {
-  padding: 4rem;
+  overflow-x: hidden;
 
   .background {
     position: absolute;
     z-index: -1;
+    overflow: hidden;
+
+    @include desktop {
+      font-size: 13rem;
+    }
+
+    @include tablet {
+      font-size: 9rem;
+    }
+
+    @include phablet {
+      font-size: 7rem;
+    }
   }
 
   .p-big {
+    padding: 4rem;
     font-size: 4rem;
     line-height: 5rem;
     font-weight: $regular;
+
+    @include desktop {
+      padding: 3rem;
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+
+    @include tablet {
+      padding: 1.5rem;
+    }
+
+    @include phablet {
+      padding: 1rem;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 
   .p-small {
@@ -28,5 +58,26 @@ body {
   .thin {
     font-style: italic;
     font-weight: $light;
+  }
+
+  .dot {
+    height: 4rem;
+    width: 4rem;
+    background-color: $black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 4rem;
+
+    @include desktop {
+      margin-left: 3rem;
+    }
+
+    @include tablet {
+      margin-left: 1.5rem;
+    }
+
+    @include phablet {
+      margin-left: 1rem;
+    }
   }
 }
