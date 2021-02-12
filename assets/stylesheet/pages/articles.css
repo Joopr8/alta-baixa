@@ -185,7 +185,6 @@ p {
 /* Mixins */
 body {
   padding: 4rem;
-  overflow: hidden;
 }
 
 body .background {
@@ -193,10 +192,16 @@ body .background {
   z-index: -1;
 }
 
-body .p-articles {
+body .p-big {
   font-size: 4rem;
   line-height: 5rem;
   font-weight: 400;
+}
+
+body .p-small {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 body .bold {
