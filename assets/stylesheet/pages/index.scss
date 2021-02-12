@@ -27,6 +27,16 @@ html {
           display: inline-block;
           transition: background-color 1s ease-out;
           background-color: $black;
+
+          @include desktop {
+            width: 4rem;
+            height: 4rem;
+          }
+
+          @include phablet {
+            width: 3rem;
+            height: 3rem;
+          }
         }
 
         &:hover {
@@ -47,24 +57,17 @@ html {
             font-size: 5rem;
             font-weight: $extra-bold;
 
-            margin: -10rem -4rem;
+            margin: -5rem -3rem;
+
+            @include desktop {
+              font-size: 3.5rem;
+            }
+
+            @include phablet {
+              font-size: 2rem;
+            }
           }
         }
-      }
-
-      .text {
-        display: none;
-
-        position: absolute;
-        width: 40vw;
-        background-color: white;
-
-        padding: 2rem;
-        margin: -2rem -4rem;
-
-        font-weight: $light;
-
-        z-index: 3;
       }
 
       .overlay {
@@ -82,12 +85,28 @@ html {
 
       h1 {
         font-weight: $extra-bold;
+
+        @include desktop {
+          font-size: 11rem;
+        }
+
+        @include phablet {
+          font-size: 7rem;
+        }
       }
     }
 
     .magazine {
       font-weight: $light;
       font-size: 2rem;
+
+      @include desktop {
+        font-size: 1.5rem;
+      }
+
+      @include phablet {
+        font-size: 1.2rem;
+      }
     }
   }
 }

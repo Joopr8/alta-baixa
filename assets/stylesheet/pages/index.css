@@ -224,6 +224,20 @@ html .hero .links .dot .point {
   background-color: #000000;
 }
 
+@media (max-width: 1000px) {
+  html .hero .links .dot .point {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html .hero .links .dot .point {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
 html .hero .links .dot:hover {
   cursor: pointer;
 }
@@ -241,18 +255,19 @@ html .hero .links .dot:hover .overlay {
   text-decoration: none;
   font-size: 5rem;
   font-weight: 800;
-  margin: -10rem -4rem;
+  margin: -5rem -3rem;
 }
 
-html .hero .links .text {
-  display: none;
-  position: absolute;
-  width: 40vw;
-  background-color: white;
-  padding: 2rem;
-  margin: -2rem -4rem;
-  font-weight: 200;
-  z-index: 3;
+@media (max-width: 1000px) {
+  html .hero .links .dot:hover .overlay {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html .hero .links .dot:hover .overlay {
+    font-size: 2rem;
+  }
 }
 
 html .hero .links .overlay {
@@ -272,8 +287,32 @@ html .hero .name h1 {
   font-weight: 800;
 }
 
+@media (max-width: 1000px) {
+  html .hero .name h1 {
+    font-size: 11rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html .hero .name h1 {
+    font-size: 7rem;
+  }
+}
+
 html .hero .magazine {
   font-weight: 200;
   font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+  html .hero .magazine {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html .hero .magazine {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
