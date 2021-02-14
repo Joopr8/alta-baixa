@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .questionmark {
+  position: fixed;
+  top: 0;
+  opacity: 50%;
+  z-index: 10;
+}
+
+body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 12.5vw;
+  height: 100vh;
+  border-right: 1rem #fdc73d dotted;
+}
+
+body div .roll {
+  width: 90%;
+}
+
+body div .special {
+  width: 120%;
+}
+
+body .first {
+  border-left: 1rem #fdc73d dotted;
+}
+/*# sourceMappingURL=edge.css.map */

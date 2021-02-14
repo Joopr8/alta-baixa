@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  .questionmark {
+    position: fixed;
+    top: 0;
+    opacity: 50%;
+    z-index: 10;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    width: 12.5vw;
+    height: 100vh;
+    border-right: 1rem #fdc73d dotted;
+
+    .roll {
+      width: 90%;
+    }
+
+    .special {
+      width: 120%;
+    }
+  }
+
+  .first {
+    border-left: 1rem #fdc73d dotted;
+  }
+}
