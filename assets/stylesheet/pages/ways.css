@@ -212,10 +212,16 @@ html .container .dot {
   border-radius: 50%;
   display: inline-block;
   margin: 2rem;
-  position: absolute;
+  position: fixed;
   -webkit-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
   background-color: #000000;
+}
+
+@media (max-width: 1400px) {
+  html .container .dot {
+    position: absolute;
+  }
 }
 
 html .container .dot:hover {

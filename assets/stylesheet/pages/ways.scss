@@ -15,10 +15,14 @@ html {
       border-radius: 50%;
       display: inline-block;
       margin: 2rem;
-      position: absolute;
+      position: fixed;
 
       transition: background-color 0.25s ease-out;
       background-color: $black;
+
+      @include hd {
+        position: absolute;
+      }
 
       &:hover {
         transition: background-color 0.25s ease-out;
