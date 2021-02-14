@@ -85,6 +85,10 @@ html {
         &:hover {
           cursor: pointer;
           background-color: $yellow;
+
+          .yellow {
+            color: white;
+          }
         }
 
         @include tablet {

@@ -340,6 +340,10 @@ html .container .rules .cell:hover {
   background-color: #ffc83b;
 }
 
+html .container .rules .cell:hover .yellow {
+  color: white;
+}
+
 @media (max-width: 750px) {
   html .container .rules .cell {
     padding: 0.8rem 0;
