@@ -1,24 +1,48 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
+  overflow-x: hidden;
 
   .questionmark {
     position: fixed;
     top: 0;
-    opacity: 50%;
-    z-index: 10;
+    opacity: 90%;
+    z-index: 1000;
   }
 
-  div {
+  .dot {
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+    background-color: #000000;
+    border-radius: 50%;
+    z-index: 2000;
+
+    &:hover {
+      background-color: #fdc73d;
+    }
+  }
+
+  > div {
     display: flex;
     justify-content: center;
-    width: 12.5vw;
-    height: 100vh;
-    border-right: 1rem #fdc73d dotted;
+    height: 12.5vw;
+    width: 100%;
+    border-bottom: 1rem #fdc73d dotted;
 
-    .roll {
-      width: 90%;
+    .c-my-flooper{
+      position: relative; // [1] anything but static
+      display: flex; // [1]
+      flex-wrap: nowrap; // [1]
+      white-space: nowrap; // [1]
+    }
+    
+    .c-my-flooper__el{
+      width: auto;
+      height: 100%;
+      margin-right: 4rem;
     }
 
     .special {
@@ -27,6 +51,6 @@ body {
   }
 
   .first {
-    border-left: 1rem #fdc73d dotted;
+    border-top: 1rem #fdc73d dotted;
   }
 }

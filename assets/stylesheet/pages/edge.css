@@ -1,39 +1,64 @@
 body {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  overflow-x: hidden;
 }
 
 body .questionmark {
   position: fixed;
   top: 0;
-  opacity: 50%;
-  z-index: 10;
+  opacity: 90%;
+  z-index: 1000;
 }
 
-body div {
+body .dot {
+  position: fixed;
+  top: 0;
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem;
+  background-color: #000000;
+  border-radius: 50%;
+  z-index: 2000;
+}
+
+body .dot:hover {
+  background-color: #fdc73d;
+}
+
+body > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 12.5vw;
-  height: 100vh;
-  border-right: 1rem #fdc73d dotted;
+  height: 12.5vw;
+  width: 100%;
+  border-bottom: 1rem #fdc73d dotted;
 }
 
-body div .roll {
-  width: 90%;
+body > div .c-my-flooper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
-body div .special {
+body > div .c-my-flooper__el {
+  width: auto;
+  height: 100%;
+  margin-right: 4rem;
+}
+
+body > div .special {
   width: 120%;
 }
 
 body .first {
-  border-left: 1rem #fdc73d dotted;
+  border-top: 1rem #fdc73d dotted;
 }
 /*# sourceMappingURL=edge.css.map */

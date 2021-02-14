@@ -261,4 +261,8 @@ body .dot {
   display: inline-block;
   margin-bottom: 1rem;
 }
+
+body .dot:hover {
+  background-color: #fdc73d;
+}
 /*# sourceMappingURL=articles.css.map */

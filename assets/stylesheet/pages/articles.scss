@@ -66,5 +66,9 @@ body {
     border-radius: 50%;
     display: inline-block;
     margin-bottom: 1rem;
+
+    &:hover {
+      background-color: #fdc73d;
+    }
   }
 }
