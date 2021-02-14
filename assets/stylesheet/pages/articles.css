@@ -235,13 +235,15 @@ body .background {
 
 @media (max-width: 550px) {
   body .background {
-    font-size: 5rem;
+    font-size: 4rem;
     position: relative;
   }
 }
 
-body .container {
-  padding: 2rem;
+@media (max-width: 550px) {
+  body .container {
+    padding: 1rem;
+  }
 }
 
 body .container .p-big {
@@ -269,6 +271,32 @@ body .container .p-small {
   font-size: 2rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 1400px) {
+  body .container .p-small {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  body .container .p-small {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 750px) {
+  body .container .p-small {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  body .container .p-small {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 body .bold {
