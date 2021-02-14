@@ -9,6 +9,23 @@ html {
       flex-direction: column;
     }
 
+    .dot {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 2rem;
+      position: absolute;
+
+      transition: background-color 0.25s ease-out;
+      background-color: $black;
+
+      &:hover {
+        transition: background-color 0.25s ease-out;
+        background-color: #fdc73d;
+      }
+    }
+
     .title {
       height: 100vh;
 
@@ -68,8 +85,11 @@ html {
         border-bottom: 5px solid $black;
         padding: 1.2rem 2rem;
 
+        background-color: $white;
+
         &:hover {
           cursor: pointer;
+          background-color: $yellow;
         }
 
         @include tablet {
@@ -80,35 +100,36 @@ html {
           display: flex;
           font-weight: $bold;
 
-            .exp {
-              font-size: 50px;
+          .exp {
+            .number {
+              font-weight: $semi-bold;
+            }
+            @include desktop {
+              font-size: 35px;
+            }
 
-              @include desktop {
-                font-size: 35px;
-              }
+            @include tablet {
+              font-size: 25px;
+            }
 
-              @include tablet {
-                font-size: 25px;
-              }
-
-              @include phablet {
-                font-size: 18px;
-              }
+            @include phablet {
+              font-size: 18px;
             }
           }
         }
+      }
 
-        .description {
-          display: none;
+      .description {
+        display: none;
 
-          font-weight: $regular;
-          margin: 0.5rem 5rem;
-        }
+        font-weight: $regular;
+        margin: 2rem 5rem;
+        width: 40vw;
       }
     }
   }
-  ::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
-  }
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }

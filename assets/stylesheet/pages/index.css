@@ -182,6 +182,10 @@ p {
   white-space: nowrap;
 }
 
+.c-my-flooper__el {
+  margin-right: 3rem;
+}
+
 /* Mixins */
 html .hero {
   width: 100vw;

@@ -182,6 +182,10 @@ p {
   white-space: nowrap;
 }
 
+.c-my-flooper__el {
+  margin-right: 3rem;
+}
+
 /* Mixins */
 body {
   overflow-x: hidden;
@@ -256,13 +260,17 @@ body .thin {
 body .dot {
   height: 4rem;
   width: 4rem;
-  background-color: #000000;
   border-radius: 50%;
   display: inline-block;
   margin-bottom: 1rem;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #000000;
 }
 
 body .dot:hover {
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
   background-color: #fdc73d;
 }
 /*# sourceMappingURL=articles.css.map */

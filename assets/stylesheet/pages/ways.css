@@ -182,6 +182,10 @@ p {
   white-space: nowrap;
 }
 
+.c-my-flooper__el {
+  margin-right: 3rem;
+}
+
 /* Mixins */
 html .container {
   display: -webkit-box;
@@ -200,6 +204,24 @@ html .container {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+html .container .dot {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 2rem;
+  position: absolute;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #000000;
+}
+
+html .container .dot:hover {
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #fdc73d;
 }
 
 html .container .title {
@@ -287,10 +309,12 @@ html .container .rules .cell {
   width: 100%;
   border-bottom: 5px solid #000000;
   padding: 1.2rem 2rem;
+  background-color: #ffffff;
 }
 
 html .container .rules .cell:hover {
   cursor: pointer;
+  background-color: #ffc83b;
 }
 
 @media (max-width: 750px) {
@@ -306,57 +330,36 @@ html .container .rules .cell .text {
   font-weight: 700;
 }
 
-html .container .rules .cell .text .number {
-  text-align: right;
+html .container .rules .cell .text .exp .number {
+  font-weight: 600;
 }
 
 @media (max-width: 1000px) {
-  html .container .rules .cell .text .number {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 750px) {
-  html .container .rules .cell .text .number {
-    font-size: 55px;
-  }
-}
-
-@media (max-width: 550px) {
-  html .container .rules .cell .text .number {
-    font-size: 45px;
-  }
-}
-
-html .container .rules .cell .text .number .exp {
-  font-size: 50px;
-}
-
-@media (max-width: 1000px) {
-  html .container .rules .cell .text .number .exp {
+  html .container .rules .cell .text .exp {
     font-size: 35px;
   }
 }
 
 @media (max-width: 750px) {
-  html .container .rules .cell .text .number .exp {
+  html .container .rules .cell .text .exp {
     font-size: 25px;
   }
 }
 
 @media (max-width: 550px) {
-  html .container .rules .cell .text .number .exp {
+  html .container .rules .cell .text .exp {
     font-size: 18px;
   }
 }
 
-html .container .rules .cell .description {
+html .container .rules .description {
   display: none;
   font-weight: 400;
-  margin: 0.5rem 5rem;
+  margin: 2rem 5rem;
+  width: 40vw;
 }
 
-html ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   /* Remove scrollbar space */
   background: transparent;

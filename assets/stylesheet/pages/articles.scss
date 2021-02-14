@@ -62,12 +62,15 @@ body {
   .dot {
     height: 4rem;
     width: 4rem;
-    background-color: $black;
     border-radius: 50%;
     display: inline-block;
     margin-bottom: 1rem;
 
+    transition: background-color 0.25s ease-out;
+    background-color: $black;
+
     &:hover {
+      transition: background-color 0.25s ease-out;
       background-color: #fdc73d;
     }
   }
