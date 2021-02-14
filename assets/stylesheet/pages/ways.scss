@@ -80,21 +80,6 @@ html {
           display: flex;
           font-weight: $bold;
 
-          .number {
-            text-align: right;
-
-            @include desktop {
-              font-size: 4rem;
-            }
-
-            @include tablet {
-              font-size: 55px;
-            }
-
-            @include phablet {
-              font-size: 45px;
-            }
-
             .exp {
               font-size: 50px;
 
