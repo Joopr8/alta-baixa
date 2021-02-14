@@ -237,7 +237,12 @@ body .background {
   body .background {
     font-size: 4rem;
     position: relative;
+    margin-bottom: 1rem;
   }
+}
+
+body .container {
+  padding: 2rem;
 }
 
 @media (max-width: 550px) {
@@ -261,8 +266,8 @@ body .container .p-big {
 
 @media (max-width: 550px) {
   body .container .p-big {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
