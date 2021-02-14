@@ -10,23 +10,11 @@ html {
     }
 
     .dot {
-      height: 4rem;
-      width: 4rem;
-      border-radius: 50%;
-      display: inline-block;
-      margin: 2rem;
       position: fixed;
-
-      transition: background-color 0.25s ease-out;
-      background-color: $black;
+      margin: 2rem;
 
       @include hd {
         position: absolute;
-      }
-
-      &:hover {
-        transition: background-color 0.25s ease-out;
-        background-color: #fdc73d;
       }
     }
 
@@ -54,16 +42,19 @@ html {
         z-index: 4;
         width: 20rem;
 
-        line-height: 96px;
-
         @include hd {
           position: initial;
           width: 80vw;
         }
 
         @include desktop {
-          font-size: 4rem;
-          line-height: 97px;
+          font-size: 4.5rem;
+          line-height: 5.5rem;
+        }
+
+        @include phablet {
+          font-size: 3rem;
+          line-height: 4rem;
         }
       }
     }
@@ -105,19 +96,16 @@ html {
           font-weight: $bold;
 
           .exp {
-            .number {
-              font-weight: $semi-bold;
-            }
             @include desktop {
-              font-size: 35px;
+              font-size: 3rem;
             }
 
             @include tablet {
-              font-size: 25px;
+              font-size: 2.5rem;
             }
 
             @include phablet {
-              font-size: 18px;
+              font-size: 2rem;
             }
           }
         }
@@ -127,8 +115,17 @@ html {
         display: none;
 
         font-weight: $regular;
-        margin: 2rem 5rem;
+        margin: 2rem;
         width: 40vw;
+
+        @include hd {
+          width: 80vw;
+        }
+
+        @include phablet {
+          margin: 1rem;
+          font-size: 1rem;
+        }
       }
     }
   }

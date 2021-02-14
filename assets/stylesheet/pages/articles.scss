@@ -23,7 +23,7 @@ body {
   }
 
   .container {
-    padding: 1rem;
+    padding: 2rem;
 
     .p-big {
       font-size: 4rem;
@@ -60,18 +60,6 @@ body {
   }
 
   .dot {
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    display: inline-block;
-    margin-bottom: 1rem;
-
-    transition: background-color 0.25s ease-out;
-    background-color: $black;
-
-    &:hover {
-      transition: background-color 0.25s ease-out;
-      background-color: #fdc73d;
-    }
+    margin-bottom: 2rem;
   }
 }

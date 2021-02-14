@@ -187,6 +187,30 @@ p {
 }
 
 /* Mixins */
+/* Dot navigation */
+.dot {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #000000;
+}
+
+.dot:hover {
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #fdc73d;
+}
+
+@media (max-width: 550px) {
+  .dot {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
 html .hero {
   width: 100vw;
   height: 100vh;
@@ -218,7 +242,7 @@ html .hero .links {
   width: 80vw;
 }
 
-html .hero .links .dot .point {
+html .hero .links .dot-big .point {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -229,30 +253,30 @@ html .hero .links .dot .point {
 }
 
 @media (max-width: 1000px) {
-  html .hero .links .dot .point {
+  html .hero .links .dot-big .point {
     width: 4rem;
     height: 4rem;
   }
 }
 
 @media (max-width: 550px) {
-  html .hero .links .dot .point {
+  html .hero .links .dot-big .point {
     width: 3rem;
     height: 3rem;
   }
 }
 
-html .hero .links .dot:hover {
+html .hero .links .dot-big:hover {
   cursor: pointer;
 }
 
-html .hero .links .dot:hover .point {
+html .hero .links .dot-big:hover .point {
   -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
   background-color: #ffc83b;
 }
 
-html .hero .links .dot:hover .overlay {
+html .hero .links .dot-big:hover .overlay {
   display: block;
   position: absolute;
   color: #ffffff;
@@ -263,13 +287,13 @@ html .hero .links .dot:hover .overlay {
 }
 
 @media (max-width: 1000px) {
-  html .hero .links .dot:hover .overlay {
+  html .hero .links .dot-big:hover .overlay {
     font-size: 3.5rem;
   }
 }
 
 @media (max-width: 550px) {
-  html .hero .links .dot:hover .overlay {
+  html .hero .links .dot-big:hover .overlay {
     font-size: 2rem;
   }
 }

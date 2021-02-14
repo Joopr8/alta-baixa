@@ -187,6 +187,30 @@ p {
 }
 
 /* Mixins */
+/* Dot navigation */
+.dot {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #000000;
+}
+
+.dot:hover {
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #fdc73d;
+}
+
+@media (max-width: 550px) {
+  .dot {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
 html .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,27 +231,14 @@ html .container {
 }
 
 html .container .dot {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 2rem;
   position: fixed;
-  -webkit-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-  background-color: #000000;
+  margin: 2rem;
 }
 
 @media (max-width: 1400px) {
   html .container .dot {
     position: absolute;
   }
-}
-
-html .container .dot:hover {
-  -webkit-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-  background-color: #fdc73d;
 }
 
 html .container .title {
@@ -266,7 +277,6 @@ html .container .title h2 {
   position: fixed;
   z-index: 4;
   width: 20rem;
-  line-height: 96px;
 }
 
 @media (max-width: 1400px) {
@@ -278,8 +288,15 @@ html .container .title h2 {
 
 @media (max-width: 1000px) {
   html .container .title h2 {
-    font-size: 4rem;
-    line-height: 97px;
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html .container .title h2 {
+    font-size: 3rem;
+    line-height: 4rem;
   }
 }
 
@@ -336,33 +353,42 @@ html .container .rules .cell .text {
   font-weight: 700;
 }
 
-html .container .rules .cell .text .exp .number {
-  font-weight: 600;
-}
-
 @media (max-width: 1000px) {
   html .container .rules .cell .text .exp {
-    font-size: 35px;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 750px) {
   html .container .rules .cell .text .exp {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 550px) {
   html .container .rules .cell .text .exp {
-    font-size: 18px;
+    font-size: 2rem;
   }
 }
 
 html .container .rules .description {
   display: none;
   font-weight: 400;
-  margin: 2rem 5rem;
+  margin: 2rem;
   width: 40vw;
+}
+
+@media (max-width: 1400px) {
+  html .container .rules .description {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 550px) {
+  html .container .rules .description {
+    margin: 1rem;
+    font-size: 1rem;
+  }
 }
 
 ::-webkit-scrollbar {

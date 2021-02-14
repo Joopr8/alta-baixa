@@ -187,6 +187,30 @@ p {
 }
 
 /* Mixins */
+/* Dot navigation */
+.dot {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #000000;
+}
+
+.dot:hover {
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #fdc73d;
+}
+
+@media (max-width: 550px) {
+  .dot {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -217,7 +241,7 @@ body .background {
 }
 
 body .container {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 body .container .p-big {
@@ -258,19 +282,6 @@ body .thin {
 }
 
 body .dot {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 1rem;
-  -webkit-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-  background-color: #000000;
-}
-
-body .dot:hover {
-  -webkit-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-  background-color: #fdc73d;
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=articles.css.map */
