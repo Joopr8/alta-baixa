@@ -207,40 +207,37 @@ body .background {
 
 @media (max-width: 550px) {
   body .background {
-    font-size: 7rem;
+    font-size: 5rem;
+    position: relative;
   }
 }
 
-body .p-big {
-  padding: 4rem;
+body .container {
+  padding: 1rem;
+}
+
+body .container .p-big {
   font-size: 4rem;
   line-height: 5rem;
   font-weight: 400;
 }
 
 @media (max-width: 1000px) {
-  body .p-big {
-    padding: 3rem;
+  body .container .p-big {
     font-size: 3rem;
     line-height: 4rem;
   }
 }
 
-@media (max-width: 750px) {
-  body .p-big {
-    padding: 1.5rem;
-  }
-}
-
 @media (max-width: 550px) {
-  body .p-big {
-    padding: 1rem;
+  body .container .p-big {
     font-size: 2rem;
     line-height: 3rem;
   }
 }
 
-body .p-small {
+body .container .p-small {
+  width: 80vw;
   font-size: 2rem;
   line-height: 2.5rem;
   margin-bottom: 2rem;
@@ -262,24 +259,6 @@ body .dot {
   background-color: #000000;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 4rem;
-}
-
-@media (max-width: 1000px) {
-  body .dot {
-    margin-left: 3rem;
-  }
-}
-
-@media (max-width: 750px) {
-  body .dot {
-    margin-left: 1.5rem;
-  }
-}
-
-@media (max-width: 550px) {
-  body .dot {
-    margin-left: 1rem;
-  }
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=articles.css.map */
