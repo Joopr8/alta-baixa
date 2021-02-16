@@ -1,1 +1,1 @@
-https://altabaixa.fun/
+altabaixa.fun
